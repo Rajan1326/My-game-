@@ -1,45 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-  <title>Space Shooter - Sprites + Sound</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<title>Space Shooter - Sprites + Sound</title>
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="hud">
-    <div class="hud-item">Score: <b id="score">0</b></div>
-    <div class="hud-item">High: <b id="high">0</b></div>
-    <div class="hud-item">Lives: <b id="lives">3</b></div>
-    <div class="hud-item">Level: <b id="level">1</b></div>
-    <div class="hud-item">Power: <b id="power">-</b></div>
-  </div>
+<!-- HUD -->
+<div class="hud">
+<div class="hud-item">Score: <b id="score">0</b></div>
+<div class="hud-item">High: <b id="high">0</b></div>
+<div class="hud-item">Lives: <b id="lives">3</b></div>
+<div class="hud-item">Level: <b id="level">1</b></div>
+<div class="hud-item">Power: <b id="power">-</b></div>
+</div>
 
-  <canvas id="game" width="960" height="600" aria-label="Space Shooter"></canvas>
+<!-- Game Canvas -->
+<canvas id="game" width="960" height="600" aria-label="Space Shooter"></canvas>
 
-  <div class="controls">
-    <button id="btnStart">Start</button>
-    <button id="btnPause">Pause</button>
-    <button id="btnMute">Mute</button>
-    <button id="btnRestart">Restart</button>
-  </div>
+<!-- Controls -->
+<div class="controls">
+<button id="btnStart">Start</button>
+<button id="btnPause">Pause</button>
+<button id="btnMute">Mute</button>
+<button id="btnRestart">Restart</button>
+</div>
 
-  <!-- Overlay -->
-  <div id="overlay" class="overlay hidden">
-    <div class="card">
-      <h1 id="ovTitle">Space Shooter</h1>
-      <p id="ovMsg">Press Start to play.</p>
-      <button id="ovBtn">Start</button>
-    </div>
-  </div>
+<!-- Overlay -->
+<div id="overlay" class="overlay hidden">
+<div class="card">
+<h1 id="ovTitle">Space Shooter</h1>
+<p id="ovMsg">Press Start to play.</p>
+<button id="ovBtn">Start</button>
+</div>
+</div>
 
-  <!-- Touch controls -->
-  <div id="touchPad">
-    <div id="stickBase"><div id="stick"></div></div>
-    <button id="fireBtn">FIRE</button>
-  </div>
+<!-- Touch Controls (mobile) -->
+<div id="touchPad">
+<div id="stickBase"><div id="stick"></div></div>
+<button id="fireBtn">FIRE</button>
+</div>
 
-  <!-- JavaScript -->
-  <script src="script.js"></script>
+<!-- Game Script -->
+<script src="script.js"></script>
 </body>
 </html>
